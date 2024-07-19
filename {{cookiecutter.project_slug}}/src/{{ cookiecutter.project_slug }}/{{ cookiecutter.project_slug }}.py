@@ -1,15 +1,30 @@
 class MyClass:
+    """
+    A simple example class.
+
+    This class provides a basic structure for demonstration purposes.
+    """
+
     def __init__(self):
-        pass
+        """
+        Initialize the MyClass instance.
 
-    def __enter__(self):
-        pass
-
-    def __exit__(self, exc_type, exc_value, exc_traceback):
+        This constructor initializes the instance.
+        """
         pass
 
     def initialize(self):
+        """
+        Initialize the instance.
+
+        This method is called to perform any necessary initialization.
+        """
         pass
 
     def update(self):
+        """
+        Update the instance.
+
+        This method is called to update the instance.
+        """
         pass

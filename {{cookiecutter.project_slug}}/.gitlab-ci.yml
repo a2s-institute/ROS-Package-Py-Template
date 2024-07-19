@@ -1,0 +1,51 @@
+image: ros:noetic-ros-base
+
+stages:
+  - install
+  - test
+  - lint
+  - format
+
+variables:
+  CATKIN_WS: /catkin_ws
+  DEBIAN_FRONTEND: noninteractive
+
+before_script:
+  - apt-get update
+  - apt-get install -y python3-pip python3-catkin-pkg python3-rosdep python3-colcon-common-extensions
+  - pip3 install tox
+  - mkdir -p ${CATKIN_WS}/src
+  - ln -s ${CI_PROJECT_DIR} ${CATKIN_WS}/src/${CI_PROJECT_NAME}
+  - cd ${CATKIN_WS}
+  - rosdep init || true
+  - rosdep update
+  - rosdep install --from-paths src --ignore-src -r -y
+  - source /opt/ros/noetic/setup.bash
+  - catkin_make
+  - source devel/setup.bash
+
+install:
+  stage: install
+  script:
+    - echo "Dependencies installed"
+
+test:
+  stage: test
+  script:
+    - tox -e test
+
+lint:
+  stage: lint
+  script:
+    - tox -e lint
+
+format:
+  stage: format
+  script:
+    - tox -e format
+
+cache:
+  paths:
+    - ${CATKIN_WS}/devel
+    - ${CATKIN_WS}/build
+    - .tox
