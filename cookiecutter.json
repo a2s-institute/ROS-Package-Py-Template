@@ -1,0 +1,17 @@
+{
+    "project_name": "My ROS Package",
+    "project_slug": "{{ cookiecutter.project_name.lower().replace(' ', '_') }}",
+    "description": "A brief description of this ROS package",
+    "author_name": "Name Surname",
+    "email": "name.surname@smail.inf.h-brs.de",
+    "gitlab_organization_name": "https://git.inf.h-brs.de",
+    "gitlab_repository_name": "",
+    "gitlab": [
+        false,
+        true
+    ],
+    "__gh_slug": "{{ cookiecutter.gitlab_organization_name }}/{{ cookiecutter.gitlab_repository_name }}",
+    "ros_version": "melodic",
+    "license": "MIT",
+    "version": "0.1.0"
+  }

@@ -1,0 +1,17 @@
+<package format="2">
+  <name>{{ cookiecutter.project_slug }}</name>
+  <version>{{ cookiecutter.version }}</version>
+  <description>{{ cookiecutter.description }}</description>
+
+  <maintainer email="{{ cookiecutter.email }}">{{ cookiecutter.author_name }}</maintainer>
+
+  <license>{{ cookiecutter.license }}</license>
+
+  <buildtool_depend>catkin</buildtool_depend>
+  <build_depend>rospy</build_depend>
+  <build_depend>std_msgs</build_depend>
+  <exec_depend>rospy</exec_depend>
+  <exec_depend>std_msgs</exec_depend>
+
+  <test_depend>pytest</test_depend>
+</package>
