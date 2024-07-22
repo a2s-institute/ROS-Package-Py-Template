@@ -10,5 +10,7 @@ catkin_package()
 
 catkin_install_python(PROGRAMS
   src/{{ cookiecutter.project_slug }}/{{ cookiecutter.project_slug }}_ros_node.py
+  src/{{ cookiecutter.project_slug }}/{{ cookiecutter.project_slug }}_ros.py
+  src/{{ cookiecutter.project_slug }}/{{ cookiecutter.project_slug }}.py
   DESTINATION ${CATKIN_PACKAGE_BIN_DESTINATION}
 )
