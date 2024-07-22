@@ -1,5 +1,5 @@
 import rospy
-from {{ cookiecutter.project_slug }}.{{ cookiecutter.project_slug }} import MyClass
+from {{ cookiecutter.project_slug }} import MyClass
 
 class MyClassROS:
     """
