@@ -35,6 +35,3 @@ For more information visit the doc of [cruft](https://cruft.github.io/cruft/#upd
 
 ## Contributing
 Please consider to either raise an issue or contribute by sending a pull request. Thank you!
-
-### Acknowledgement
-This repo has been created by Ludovico Scarton. Valuable feedbacks and support in debugging have been provided by Dharmin Bakaraniya and Santosh Thoduka.
