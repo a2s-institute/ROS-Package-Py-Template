@@ -23,6 +23,7 @@ class MyClassROS:
 
         This method initializes the underlying MyClass instance.
         """
+        rospy.loginfo('Initialised')
         self.my_class.initialize()
 
     def update(self):
@@ -31,4 +32,5 @@ class MyClassROS:
 
         This method updates the underlying MyClass instance.
         """
+        rospy.loginfo("inside run_once")
         self.my_class.update()
