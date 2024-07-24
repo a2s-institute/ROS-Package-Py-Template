@@ -12,6 +12,7 @@
     ],
     "__gh_slug": "{{ cookiecutter.gitlab_organization_name }}/{{ cookiecutter.gitlab_repository_name }}",
     "ros_version": "melodic",
+    "python_interpreter_location": "/usr/bin/python3",
     "license": "MIT",
     "version": "0.1.0"
   }
