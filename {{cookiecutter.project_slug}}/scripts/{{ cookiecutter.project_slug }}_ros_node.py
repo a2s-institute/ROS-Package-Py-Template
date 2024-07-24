@@ -1,4 +1,4 @@
-#! /usr/bin/python3
+#! {{ cookiecutter.python_interpreter_location}}
 import rospy
 from {{ cookiecutter.project_slug }}.{{ cookiecutter.project_slug }}_ros import MyClassROS
 
