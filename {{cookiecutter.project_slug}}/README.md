@@ -2,6 +2,12 @@
 
 {{ cookiecutter.description }}
 
+## Recall
+Do not forget to set:
+```bash
+chmod +x script/{{ cookiecutter.project_slug }}_ros_node.py
+```
+
 ## Introduction
 
 This package is a ROS node.

@@ -8,6 +8,18 @@ pip3 install cruft
 cruft create https://github.com/a2s-institute/ROS-Package-Py-Template
 ```
 
+### Python interpreter location
+This tool will ask the location of your Python interpreter (often for PC `/usr/bin/env python` and for Docker `/usr/bin/python3`).
+
+Check it in advance using:
+```bash
+which python
+```
+In the case of an empty return, try with
+```bash
+which python3
+```
+
 ## Check and update your project when the template is updated
 To check if the template has been updated compared the version used for your project:
 ```bash
@@ -23,3 +35,6 @@ For more information visit the doc of [cruft](https://cruft.github.io/cruft/#upd
 
 ## Contributing
 Please consider to either raise an issue or contribute by sending a pull request. Thank you!
+
+### Acknowledgement
+This repo has been created by Ludovico Scarton. Valuable feedbacks and support in debugging have been provided by Dharmin Bakaraniya and Santosh Thoduka.
